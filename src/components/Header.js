@@ -4,7 +4,7 @@ import "./Header/HeaderStyle.css";
 const Header = () => 
 {
     return (
-        <div className="header">
+        <div className="header container-fluid">
             <h1>Transport.ma</h1>
             <p>
                 Tout le transport .. Un seul site

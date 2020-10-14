@@ -47,7 +47,7 @@ class Synthese extends React.Component {
     render(){
         return(
           
-          <div className='synthese'>
+          <div className='synthese '>
                 <h1>Voici votre biellet:</h1>
                         <table border="1" cellSpacing="0">
                             <tbody>

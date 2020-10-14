@@ -1,5 +1,6 @@
 .choix{
     width:40%;
+    max-height: max-content;
     text-align: center;
     background-color: whitesmoke;
     margin: 10px;

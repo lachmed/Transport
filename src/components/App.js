@@ -15,7 +15,7 @@ function App() {
   return (
       <div className="app">
            <Header />
-          <Voyage />
+           <Voyage />
           {/*<Colis />
           <Tourisme />
           <Contact />

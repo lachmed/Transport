@@ -1,5 +1,6 @@
 .synthese{
     width: 80%;
+    max-height: max-content;
     margin: 16px;
     margin-left: auto;
     margin-right: auto;

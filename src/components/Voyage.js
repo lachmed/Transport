@@ -17,8 +17,10 @@ class Voyage extends React.Component {
                                 arrive: ""
                             },
                     shouldReaload: false,
-                    demande: {}
-        }
+                    demande: {},
+                    tripNumbers: []
+                            
+                }
 
         Keygen=0;
 
@@ -49,8 +51,10 @@ class Voyage extends React.Component {
             )                
         }
 
+        
     render()
     {
+       
          return (
            <div className="voyage">
                 <div className="part1">
@@ -60,8 +64,10 @@ class Voyage extends React.Component {
 
                 </div>           
 
-                { (!this.state.shouldReaload && this.state.trajet.depart !== "" &&  this.state.trajet.arrive !== "") && <div className="part2"><Demande sendInfos={this.getInfos} /></div>}
+                { (!this.state.shouldReaload && this.state.trajet.depart !== "" &&  this.state.trajet.arrive !== "") && <div className="part2"><Demande key={this.Keygen++} trajet={this.state.trajet} sendInfos={this.getInfos} /></div>}
                 {this.state.shouldReaload && <Synthese demande={this.state.demande} reload={this.reload}/> }
+            
+         
            </div> 
          );
     }     

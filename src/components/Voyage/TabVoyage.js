@@ -27,11 +27,9 @@ class TabVoyages extends React.Component{
                        }
                 }
                 this.setState({ details : trips })
-        });
-
-
+                
+            });
     }
-
 
     render()
     {
@@ -42,14 +40,12 @@ class TabVoyages extends React.Component{
                  </tr>
         });
 
-
-
         return( 
             <div className="tabvoyage">
-                <table border="1" cellSpacing="0" >
-                    <caption>
+                <h1>
                         Voyages Disponibles:
-                    </caption>
+                    </h1>
+                <table border="1" cellSpacing="0" >
                     <thead>
                     <tr><th>Numéro du Voyage</th><th>Départ</th><th>Arrivé</th><th>Date</th><th>Heure</th><th>Prix</th></tr>
                     </thead>

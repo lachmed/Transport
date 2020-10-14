@@ -1,6 +1,6 @@
 .tabvoyage{
     width:70%;
-    max-height: 270px;
+    max-height: max-content;
     text-align: center;
     background-color: whitesmoke;
     margin: 10px;
@@ -21,7 +21,8 @@
 }
 
 
-.tabvoyage caption{
+.tabvoyage h1{
+    font-size: 1.6em;
     margin: 12px;
     font-weight: bold;
 }

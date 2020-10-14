@@ -1,6 +1,9 @@
 import firebase from '../node_modules/firebase/firebase';
+import "firebase/auth";
+import "firebase/firestore";
   // Your web app's Firebase configuration
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+ 
   var firebaseConfig = {
     apiKey: "AIzaSyDs_ZHLRp5XKDQtWE3V2OzSYgH6OKZ7heg",
     authDomain: "transport-ma-9ae4d.firebaseapp.com",
@@ -17,3 +20,5 @@ import firebase from '../node_modules/firebase/firebase';
 
 
 export default firebase;
+export const auth = firebase.auth();
+export const firestore = firebase.firestore();
