@@ -28,7 +28,6 @@ class Demande extends React.Component{
         const details = firebase.database().ref('Details');
         var numbers = [];
         details.on('value', snapshot => {
-                var cpt=0;
                 for( var trip in Object.values(snapshot.val()))
                 {
                   if( Object.values(snapshot.val())[trip].traj === this.state.traj)

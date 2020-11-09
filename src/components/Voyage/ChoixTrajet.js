@@ -70,12 +70,12 @@ class ChoixTrajet extends React.Component {
         {
         
             // getting options from database/firebase
-            {
+            
                 var  options = this.state.options.map( traj => {
                     return <option key={traj.id} value={traj.ville}>{traj.ville}</option>
                 }
             ); 
-            }
+            
             
 
             return(

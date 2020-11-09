@@ -5,11 +5,18 @@
     font-size: 2em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: whitesmoke;
-    padding: 1%;
-    overflow-y: hidden;
+    padding: 4%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: stretch;
+    justify-content: space-evenly;
     -webkit-box-shadow: 0px 2px 11px -2px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 2px 11px -2px rgba(0,0,0,0.75);
     box-shadow: 0px 2px 11px -2px rgba(0,0,0,0.75);
+   
 }
 
 .header h1{
@@ -18,9 +25,40 @@
     width: fit-content;
     color: royalblue;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 2.5em;
+    font-size: 1.5em;
 }
-
 .header p{
     font-size: large;
 }
+
+.logo{
+    margin-right: 50px;
+}
+
+.header nav ul{
+    list-style-type: none;
+    display: inline;
+}
+.header nav ul li {
+    display: inline;
+}
+.header nav ul li a{
+    text-decoration: none;
+    color: black;
+    border: 1px solid royalblue;
+    font-weight: bolder;
+    padding: 10px;
+}
+.header nav ul li a:hover{
+        background-color: royalblue;
+        color: whitesmoke;
+        font-weight: bolder;
+        padding: 10px;
+        -webkit-box-shadow: 0px 4px 3px 1px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 4px 3px 1px rgba(0,0,0,0.75);
+        box-shadow: 0px 4px 3px 1px rgba(0,0,0,0.75);
+}
+.header nav{
+    font-size: 0.7em;
+}
+

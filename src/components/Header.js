@@ -1,15 +1,21 @@
 import React from "react";
+
+//style
 import "./Header/HeaderStyle.css";
+
+//components
+import Logo from "./Header/Logo";
+import NavBar from "./Header/NavBar";
+
 
 const Header = () => 
 {
     return (
         <div className="header container-fluid">
-            <h1>Transport.ma</h1>
-            <p>
-                Tout le transport .. Un seul site
-            </p>
-        </div>   
+            <Logo />
+            <NavBar />
+        </div>
+        
     );
 }
 
